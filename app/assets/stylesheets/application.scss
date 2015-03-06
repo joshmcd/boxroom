@@ -3,9 +3,15 @@
 *= require_tree .
 */
 
+@font-face {
+    font-family: "quadon";
+    font-style: normal;
+    font-weight: 500;
+    src: url("//www.library.jhu.edu/fonts/webfonts/Quadon-Bold.eot?#iefix") format("embedded-opentype"), url("//www.library.jhu.edu/fonts/webfonts/Quadon-Bold.woff") format("woff"), url("//www.library.jhu.edu/fonts/webfonts/Quadon-Bold.ttf") format("truetype");
+}
 html, body { height: 100%; }
 body { padding: 0px; margin: 0px; background-color: rgb(225,225,225); }
-body, input { font-family: Arial; font-size: 13pt; }
+body, input { font-family: 'quadon'; font-size: 13pt; }
 input { padding: 3px; border: 1px solid rgb(210,210,210); }
 input[type='button'], input[type='submit'] { background-color: #EEE; padding: 5px; }
 input[type='file'] { border: 0; }
@@ -13,33 +19,33 @@ textarea { border: 1px solid rgb(210,210,210); width: 700px; padding: 10px; font
 img { border: 0; }
 h1 { font-size: 20pt; text-transform: uppercase; }
 h3 { font-size: 13pt; margin-bottom: 0; }
-a { color: #BA303A; text-decoration: none; }
+a { color: #852b23; text-decoration: none; }
 a:hover { text-decoration: underline; }
 table { border-collapse: collapse; }
 th { text-align: left; font-size: 11pt; }
 td img { padding: 0; }
 
 #container { min-height: 100%; position: relative; }
-#header { background-color: rgb(0,39,77); color: #FFF; border-bottom: 2px solid rgb(8,58,127); min-height: 70px; }
-#menu { background-color: rgb(0,24,49); border-bottom: 4px solid #BA303A; }
-#content { position: relative; width: 850px; margin: 10px auto 0 auto; padding: 15px 25px 15px 25px; background-color: #FFF; border-radius: 8px; border-right: 1px solid #CCC; border-bottom: 1px solid #AAA; }
-#footer { position: absolute; bottom: 0; width: 100%; background-color: rgb(0,24,49); color: #FFF; border-top: 4px solid #BA303A; }
+#header { background-color: rgb(0,39,77); color: #d8cdbb; border-bottom: 2px solid rgb(8,58,127); min-height: 70px; }
+#menu { background-color: rgb(0,24,49); border-bottom: 4px solid #852b23; }
+#content { position: relative; width: 850px; margin: 10px auto 0 auto; padding: 15px 25px 15px 25px; background-color: #d8cdbb; border-radius: 8px; border-right: 1px solid #CCC; border-bottom: 1px solid #AAA; }
+#footer { position: absolute; bottom: 0; width: 100%; background-color: rgb(0,24,49); color: #d8cdbb; border-top: 4px solid #852b23; }
 #footer_spacer { height: 70px; }
 
 #progress p span.status { margin-left: 3px; }
 #progress p img { vertical-align: middle; margin-bottom: 4px; }
 
-.menu { margin: 0; padding: 10px 15px 7px 15px; color: #FFF; }
-.menu a, .footer a { color: #FFF; }
+.menu { margin: 0; padding: 10px 15px 7px 15px; color: #d8cdbb; }
+.menu a, .footer a { color: #d8cdbb; }
 .footer { margin: 0; padding: 15px; text-align: center; }
 .footer a { text-decoration: underline; }
 .table_header td { font-weight: bold; }
 .even td, .odd td, th { padding: 12px 7px 7px 7px; }
 .even { background-color: #EEE; }
-.odd { background-color: #FFF; }
+.odd { background-color: #d8cdbb; }
 .text_input { width: 280px; }
 .user_welcome { float: right; margin-right: 15px; }
-.user_welcome a { color: #FFF; text-decoration: underline; }
+.user_welcome a { color: #d8cdbb; text-decoration: underline; }
 .user_groups { margin-right: 200px; display: block; }
 .user_groups label { margin-right: 15px; }
 .user_name, .user_expiration { min-width: 180px; }
@@ -69,7 +75,7 @@ td img { padding: 0; }
 .error { background-color: rgba(255,0,0,0.8); }
 .notice { background-color: rgba(0,165,0,0.7); }
 
-.error p, .notice p { display: inline-block; font-size: 16pt; color: #FFF; margin: 0; padding: 10px 0 10px 45px; background-repeat: no-repeat; background-position: 0 5px; }
+.error p, .notice p { display: inline-block; font-size: 16pt; color: #d8cdbb; margin: 0; padding: 10px 0 10px 45px; background-repeat: no-repeat; background-position: 0 5px; }
 .error p { background-image: url(exclamation.png); }
 .notice p { background-image: url(information.png); }
 
@@ -83,6 +89,6 @@ span.field_with_errors input, span.field_with_errors textarea { background-color
 .folder_menu, .user_menu, .group_menu { padding: 7px 14px 7px 14px; }
 .folder_menu a, .user_menu a, .group_menu a { outline: none; }
 
-.highlight { display: inline-block; margin: -7px 0 -7px 0; padding-left: 14px; background-color: #BA303A; border-radius: 15px; }
+.highlight { display: inline-block; margin: -7px 0 -7px 0; padding-left: 14px; background-color: #852b23; border-radius: 15px; }
 .highlight span { display: inline-block; height: 27px; padding: 7px 14px 0 0; }
-.highlight a { text-decoration: none; color: #FFF; outline: none; }
+.highlight a { text-decoration: none; color: #d8cdbb; outline: none; }
