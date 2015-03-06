@@ -78,14 +78,14 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Mail settings
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   :address => 'mailhost',
-  #   :port => 587,
-  #   :user_name => 'user_name',
-  #   :password => 'password',
-  #   :authentication => 'plain'
-  # }
+   config.action_mailer.delivery_method = :smtp
+   config.action_mailer.smtp_settings = {
+     :address => 'smtp.gmail.com',
+     :port => 587,
+     :user_name => 'joshuadmcdonald',
+     :password => 'Pantalones666gmail',
+     :authentication => 'plain'
+   }
 
   # Host
   # config.action_mailer.default_url_options = { :host => 'localhost:3000' }

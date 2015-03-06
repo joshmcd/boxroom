@@ -8,8 +8,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
- gem 'therubyracer', platforms: :ruby
-
+gem 'therubyracer', platforms: :ruby
+gem 'thin'
 # App specific gems
 gem 'dynamic_form'
 gem 'acts_as_tree'
